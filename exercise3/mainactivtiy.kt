@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     private fun passdata() {
         val usernameid = findViewById<EditText>(R.id.usernameid)
         val username = usernameid.text.toString()
-        val intent = Intent (this, HomePage::class.java).also {
+        val intent = Intent (this, front_page ::class.java).also {
             it.putExtra("EXTRA_MESSAGE", username)
             startActivity(it)
         }
