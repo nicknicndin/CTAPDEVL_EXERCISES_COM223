@@ -1,0 +1,23 @@
+package com.example.exercise2
+
+import android.os.Bundle
+import android.os.PersistableBundle
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+
+class front_page : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_homepage)
+
+        val username = intent.getStringExtra("EXTRA_MEESAGE")
+
+        val username1 = findViewById<TextView>(R.id.username1).apply{
+            val username1 = username
+        }
+        val usernnme2 = findViewById<TextView>(R.id.username2).apply{
+            val username2 = username
+        }
+
+    }
+}
